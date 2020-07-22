@@ -1,0 +1,374 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+/* heading for page */
+.topnav {
+    background-color: darkorange;
+	width: 1520px;
+	margin-left: -260px;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 30px;
+  }
+
+    /* position of slideshow on the page */
+#slideshow { 
+    margin: 10px auto; 
+    position: relative; 
+    width: 1480px; 
+    height: 720px; 
+    padding: 10px; 
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);    /* black shadow appearing from slideshow */
+	background-color: rgb(0, 0, 0);
+}
+
+/* postion of images within the slideshow */
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+/* the div class for the navigation bar */ 
+nav{
+	width: 100%;
+	height: 60px;
+	background-color: wheat;
+}
+
+nav a, nav h3{
+	float: left;
+	margin: 0px;
+	line-height: 60px;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-decoration: none;
+	padding: 0px 40px;
+}
+
+/* navbar hover for usability */ 
+nav a:hover{
+	text-decoration: underline; 
+	background-color:darkorange;
+    color: black;
+}
+
+body{
+	margin: 0px; 
+	font-family: sans-serif;
+}
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header{
+	background-color: darkOrange;
+	color: white; 
+	height: 1575px;
+}
+
+.container {
+	background-color: darkOrange;
+	color: white; 
+	height: 1450px;
+	margin-top: 300px;
+}
+
+h1 {
+	padding: 20px;
+	text-decoration: underline;
+	font-size: 40px;
+}
+
+/* box around image */
+#box1 {
+    position: relative;
+    margin-top: 0px;
+	margin-left: 20px;
+	z-index: 0;
+}
+
+/* image goes opaque upon hover for usability*/
+#box1 a:hover {
+    opacity: 0.6;    
+}
+
+/* text box*/
+#text1 {
+	margin-left: 280px;
+	margin-top: -150px;
+}
+
+#box2 {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 20px;;
+}
+
+#box2 a:hover {
+    opacity: 0.6;
+}
+
+#text2 {
+	margin-left: 280px;
+	margin-top: -190px;
+}
+
+#box3 {
+    position: relative;
+    margin-top: 210px;
+    margin-left: 20px;;
+}
+
+#box3 a:hover {
+    opacity: 0.6;
+}
+
+#text3 {
+	margin-left: 280px;
+	margin-top: -290px;
+}
+
+#box4 {
+    position: relative;
+    margin-top: 310px;
+    margin-left: 20px;;
+}
+
+#box4 a:hover {
+    opacity: 0.6;
+}
+
+#text4 {
+	margin-left: 280px;
+	margin-top: -240px;
+}
+
+#box5 {
+    position: relative;
+    margin-top: 250px;
+    margin-left: 20px;;
+}
+
+#box5 a:hover {
+    opacity: 0.6;
+}
+
+#text5 {
+	margin-left: 280px;
+	margin-top: -140px;
+}
+
+h2 {
+	padding: 20px;
+	text-decoration: underline;
+	text-align: right;
+	font-size: 40px;
+}
+
+h4 {
+	padding: 20px;
+	text-align: right;	
+}
+
+#ant1 {
+    position: relative;
+    margin-top: 40px;
+	margin-left: 800px;
+	z-index: 0;
+}
+
+#ant1 a:hover {
+    opacity: 0.6;
+}
+
+#text6 {
+    margin-left: auto;
+	margin-top: -140px;
+	text-align: left;
+	
+}
+
+#ant2 {
+    position: relative;
+    margin-top: 170px;
+	margin-left: 800px;
+	z-index: 0;
+}
+
+#ant2 a:hover {
+    opacity: 0.6;
+}
+
+#text7 {
+    margin-left: auto;
+	margin-top: -240px;
+	text-align: left;
+	
+}
+
+#ant3 {
+    position: relative;
+    margin-top: 280px;
+	margin-left: 800px;
+	z-index: 0;
+}
+
+#ant3 a:hover {
+    opacity: 0.6;
+}
+
+#text8 {
+    margin-left: auto;
+	margin-top: -260px;
+	text-align: left;
+	
+}
+
+#ant4 {
+    position: relative;
+    margin-top: 280px;
+	margin-left: 800px;
+	z-index: 0;
+}
+
+#ant4 a:hover {
+    opacity: 0.6;
+}
+
+#text9 {
+    margin-left: auto;
+	margin-top: -260px;
+	text-align: left;
+	
+}
+
+#hole1 {
+    position: relative;
+    margin-top: 0px;
+	margin-left: 20px;
+	z-index: 0;
+}
+
+#hole1 a:hover {
+    opacity: 0.6;
+}
+
+#text10 {
+    margin-left: 280px;
+	margin-top: -150px;	
+}
+
+#hole2 {
+    position: relative;
+    margin-top: 180px;
+	margin-left: 20px;
+	z-index: 0;
+}
+
+#hole2 a:hover {
+    opacity: 0.6;
+}
+
+#text11 {
+    margin-left: 280px;
+	margin-top: -240px;	
+}
+
+#hole3 {
+    position: relative;
+    margin-top: 280px;
+	margin-left: 20px;
+	z-index: 0;
+}
+
+#hole3 a:hover {
+    opacity: 0.6;
+}
+
+#text12 {
+    margin-left: 280px;
+	margin-top: -190px;	
+}
+
+#hole4 {
+    position: relative;
+    margin-top: 230px;
+	margin-left: 20px;
+	z-index: 0;
+}
+
+#hole4 a:hover {
+    opacity: 0.6;
+}
+
+#text13 {
+    margin-left: 280px;
+	margin-top: -240px;	
+}
+
+#cable1 {
+    position: relative;
+    margin-top: 40px;
+	margin-left: 800px;
+	z-index: 0;
+}
+
+#cable1 a:hover {
+    opacity: 0.6;
+}
+
+#text14 {
+    margin-left: auto;
+	margin-top: -300px;
+	text-align: left;
+	
+}
+
+#cable2 {
+    position: relative;
+    margin-top: 350px;
+	margin-left: 800px;
+	z-index: 0;
+}
+
+#cable2 a:hover {
+    opacity: 0.6;
+}
+
+#text15 {
+    margin-left: auto;
+	margin-top: -200px;
+	text-align: left;
+	
+}
+
+#cable3 {
+    position: relative;
+    margin-top: 240px;
+	margin-left: 800px;
+	z-index: 0;
+}
+
+#cable3 a:hover {
+	opacity: 0.6;
+}
+
+#text16 {
+    margin-left: auto;
+	margin-top: -200px;
+	text-align: left;
+	
+}

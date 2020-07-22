@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+
+<html>
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>Networks in Tawa</title>
+
+	<!-- creates links between the diifferent fils (css and javasript)-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="js.js"> 
+
+	<!-- This is the file containing the important information for the jquery slideshow to run -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+
+<section>
+
+	<div class="topnav">
+		<h1>How networks run in Tawa</h1>
+	</div>
+
+	<!-- navigation bar -->
+	<nav>
+		<a href="#zero">Home</a>
+		<a href="#one">Boxes</a>
+		<a href="#two">Antennas</a>
+		<a href="#three">Manholes</a>
+		<a href="#four">Cable postions and warnings</a>
+	</nav>
+
+</section>
+
+<!-- slideshow box and images -->
+<div id="slideshow">
+
+	<div>
+	  <img src="box5.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	
+	<div>
+	  <img src="ant4.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	
+	<div>
+	  <img src="cable3.JPG" style="width:1460px; height:700px;"/>
+	</div>
+	
+	<div>
+	  <img src="hole4.jpg" style="width:1460px; height:700px;"/>
+    </div>
+	
+	<div>
+		<img src="box4.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="ant3.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="cable2.JPG" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="hole3.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="box3.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="ant2.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="cable1.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="hole2.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="box2.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="ant1.JPG" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="hole1.jpg" style="width:1460px; height:700px;"/>
+	</div>
+	  
+	<div>
+		<img src="box1.JPG" style="width:1460px; height:700px;"/>
+	</div>
+
+</div>
+
+ <!-- Setting for slideshow - must be included in index page as well as a linked file so the browser knows how and where to run the script-->
+<script>
+
+	$("#slideshow > div:gt(0)").hide();
+
+	setInterval(function() {
+	$('#slideshow > div:first')
+	.fadeOut(1000)
+	.next()
+	.fadeIn(1000)
+	.end()
+	.appendTo('#slideshow');
+	}, 3000);
+
+</script>
+
+
+	<header>
+
+		<section id="one"> <!-- makes link with navigation bar and tells browser which section to navigate to -->
+			
+			<h1>Cable Boxes</h1>
+
+			<p>Cable boxes come in a few different sizes which is a direct cause of its location. In retrospect this refers to houses (smaller boxes), street poles(usually little bigger), land/area cable boxes (big boxes). These relative sizes a linked with how muh resposinibiltiy the cables/wires have in its relative location. The main purpose of these cable boxes is to connect a vicinity or house to a service provider and without these, we wouldnt actually beable to connect to WI-FI or even use the internet. For more info go to <a href="https://en.wikipedia.org/wiki/Cable_box_(outside)">Wikipedia.org</a>.</p>
+
+            <br><hr><br>
+
+			<!-- div created around images to properle resize and position them individually-->
+			<div id="box1">  
+				<a href="box1.JPG"> <!-- helps image be clickable and can be seen bigger -->
+				<img  src="box1.JPG" style="width:200px; height:150px; border-radius: 10px;"/> 
+				</a>
+			<div id="text1">
+				<em>These were network boxes that consisted of cables/wires which are  bit smaller but seemed to appear more in neighbourhoods rather than in streets.</em>
+			</div>		
+			  </div>
+
+			<div id="box2">  
+				<a href="box2.JPG">
+				<img  src="box2.JPG" style="width:200px; height:200px; border-radius: 10px;"/> 
+				</a>
+			<div id="text2">
+				<em>These network boxes were basically a larger version of the above however unlike them, you would find these ones in the more 'bigger' and busier streets.</em>
+			</div>	
+			  </div>
+
+			<div id="box3">  
+				<a href="box3.JPG">
+				<img  src="box3.JPG" style="width:200px; height:300px; border-radius: 10px;"/> 
+				</a>
+			<div id="text3">
+				<em>This was a much bigger network box that is situated a few mins from where i live and most likely connects all the houses within the radius of my neighbourhood.</em>
+			</div>	
+			  </div>
+
+			<div id="box4">  
+				<a href="box4.JPG">
+				<img  src="box4.JPG" style="width:200px; height:250px; border-radius: 10px;"/> 
+				</a>
+			<div id="text4">
+				<em>Like the above, this is a similiar network box consisting of all the streets networking connections however is situated more towards the middle of tawa. There was about 8 to 10 of these situated in different places in tawa. </em>
+			</div>	
+			  </div>
+			
+			<div id="box5">  
+				<a href="box5.JPG">
+				<img  src="box5.JPG" style="width:200px; height:150px; border-radius: 10px;"/> 
+				</a>
+			<div id="text5">
+				<em>In my house this is a network box that is situated in my computer room and has direct cable links to my modem which is how devices can get internet in my house. This is most likely a box that most houses with wifi will have.</em>
+			</div>	
+			  </div>
+
+		</section>
+	</header>
+
+	<section id="two">
+		
+		<h2>Antennas</h2>
+
+		<h4>Antennas are serve are very important purpose in our networking community which is why you will see one on the roof off almost every house. Antennas are used to transmit and recieve signals which is why we are able to use apps like google maps and radios. Without antennas much of what we use to connect to networks wouldnt be possible. For more info go to <a href="https://study.com/academy/lesson/what-is-an-antenna-definition-uses.html">Study.com</a>.</h4>
+
+        <br><hr><br>
+
+		<div id="ant1">  
+			<a href="ant1.JPG">
+			<img  src="ant1.JPG" style="width:200px; height:150px; border-radius: 10px;"/> 
+			</a>		
+		  </div>
+		  <div id="text6">
+			<em>Antennas like this was similiar and could be seen on most houses around tawa <br>
+			- some houses you could see a satelite dish or you would see this kind of antenna.</em>
+		</div>
+
+		<div id="ant2">  
+			<a href="ant2.JPG">
+			<img  src="ant2.JPG" style="width:200px; height:250px; border-radius: 10px;"/> 
+			</a>		
+		  </div>
+		  <div id="text7">
+			<em>This was a very odd antenna as i have never seen one like this (unless it isnt <br> 
+			an antenna). It was very long and was bending, unusual shape for an antenna.</em>
+		</div>
+
+		<div id="ant3">  
+			<a href="ant3.JPG">
+			<img  src="ant3.JPG" style="width:200px; height:270px; border-radius: 10px;"/> 
+			</a>		
+		  </div>
+		  <div id="text8">
+			<em>Antennas on top of house, shops, etc come in different sizes and a few different <br>
+			shapes with this one being a little shorter and having a sort of satelite dish <br>
+			beside it.</em>
+		</div>
+
+		
+		<div id="ant4">  
+			<a href="ant4.JPG">
+			<img  src="ant4.JPG" style="width:200px; height:270px; border-radius: 10px;"/> 
+			</a>		
+		  </div>
+		  <div id="text9">
+			<em>I found this kind of antenna attached to an old phone dock that i found in my house <br>
+			which is what helped the phone to be cordless and make connections.</em>
+		</div>
+
+	</section>
+
+	<div class="container">
+	
+		<section id="three">
+		
+			<h1>Manholes</h1>
+			
+			<p>Manholes are basically another way of making people aware of wires and cables hat run underground whilst also covering them up to avoid any form of damage to the wires (as these days many forms of network connections run through underground cables). Manholes also have the purpose of being 'access points' for electricians, etc. to gracefully clean, adjust or add/attach, etc. cables in a more efficient way. For more info, go to <a href="https://theconstructor.org/practical-guide/manhole-purpose-types-features/36941/">TheContructor.org</a>.</p>
+	
+            <br><hr><br>
+
+			<div id="hole1">  
+				<a href="hole1.JPG">
+				<img  src="hole1.JPG" style="width:200px; height:150px; border-radius: 10px;"/> 
+				</a>
+			<div id="text10">
+				<em>Manholes in tawa have very stong markings to signal where they are and can relatively easy to be told apart from the gas ones and water ones which again are marked on the hole. This was a fairly popular marking with the yellow arrow pointing towards the manhole.</em>
+			</div>		
+			  </div>
+
+			  <div id="hole2">  
+				<a href="hole2.JPG">
+				<img  src="hole2.JPG" style="width:200px; height:250px; border-radius: 10px;"/> 
+				</a>
+			<div id="text11">
+				<em>There were a lots of small manholes however in a few select locations within tawa, you would find these much bigger ones (this was situated a couple mins from my house next to the big network box). These most likely carry more wires and cables.</em>
+			</div>		
+			  </div>
+
+			  <div id="hole3">  
+				<a href="hole3.JPG">
+				<img  src="hole3.JPG" style="width:200px; height:200px; border-radius: 10px;"/> 
+				</a>
+			<div id="text12">
+				<em>Like the above manholes, this has a marking around it to show where it is. this is much smaller potentiall meaning it doesnt carry as much responsibility in terms of network connections and wires/cables. Manholes in tawa are not all marked with the same colour and most have different ways of showing where they are.</em>
+			</div>		
+			  </div>
+
+			  <div id="hole4">  
+				<a href="hole4.JPG">
+				<img  src="hole4.JPG" style="width:200px; height:250px; border-radius: 10px;"/> 
+				</a>
+			<div id="text13">
+				<em>This you can clearly distinguish as manhole due to 'CHORUS' being displayed on it also for reasons that there was recently work being done inside it and you could see them installing and readjusting wires/cables.</em>
+			</div>		
+			  </div>
+	
+		</section>
+
+</div>
+	
+<section id="four">
+		
+	<h2>Stickers and Warnings</h2>
+
+	<div id="cable1">  
+		<a href="cable1.JPG">
+		<img  src="cable1.JPG" style="width:200px; height:300px; border-radius: 10px;"/> 
+		</a>		
+	  </div>
+	  <div id="text14">
+		<em>I had found this warning sign dislayed on the kerb of the road telling people <br>
+		specifically people who might dig up that place for whatever reason and could <br>
+		potentially cut them or get electrocuted by the wires.</em>
+	</div>
+
+	<div id="cable2">  
+		<a href="cable2.JPG">
+		<img  src="cable2.JPG" style="width:200px; height:200px; border-radius: 10px;"/> 
+		</a>		
+	  </div>
+	  <div id="text15">
+		<em>This warning kind of covering on a select type of wire I actually only found <br>
+		in very few places in Tawa amongst houses. This could potentially be due to  <br>
+		the wires being extra hot or electrified due to its networking activity but <br>
+		not entirely sure why its only on a select amount of wires.</em>
+	</div>
+
+	<div id="cable3">  
+		<a href="cable3.JPG">
+		<img  src="cable3.JPG" style="width:200px; height:200px; border-radius: 10px;"/> 
+		</a>		
+	  </div>
+	  <div id="text16">
+		<em>Another warning kind of sticker "beware of live wires" you would find on most <br>
+		street poles around tawa (and id suspect in other places in Wellington) and  <br>
+		again is a reminder to people not to play around or try digging up/cutting the <br>
+		pole in anyway as the wires inside could electrocute you.</em>
+	</div>
+
+	</section>
+
+	<br><br><br><br><br><br><br><br><br><hr>
+
+	
+
+ <footer style="padding:20px;"><strong>© 2020 Christian Dsouza</strong></footer>
+    
+
+
+</body>
+
+
+</html>
